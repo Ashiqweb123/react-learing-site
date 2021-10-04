@@ -1,0 +1,11 @@
+.menu-contain {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+    color: blanchedalmond;
+}
+
+.menu-container {
+    background-color: black;
+    color: white;
+}

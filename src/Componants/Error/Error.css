@@ -1,0 +1,13 @@
+.error-container {
+    background-color: lightblue;
+    color: black;
+    height: 100vh;
+}
+
+.error-container h1,
+h2 {
+    font-size: 70px;
+    font-weight: bold;
+    padding: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}

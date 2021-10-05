@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import Footer from '../Footer/Footer';
 import Menu from '../Menu/Menu';
+import Activity from '../Activity/Activity'
+
 
 const Home = () => {
+    const[services,setServices]=useState([])
+    useEffect(()=>{
+        fetch('./Home.json')
+        .then(res=>res.json())
+        .then(data=>setServices(data))
+    },[])
     return (
         <div>
             <Menu></Menu>
@@ -19,6 +27,15 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+          <div className="service-container">
+              <h2>Service</h2>
+              {
+                  services.map(service=> <Activity service={service}></Activity>)
+
+                      
+              }
+          </div>
+
        <Footer></Footer>
        </div>
     );

@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <div>
             <Menu></Menu>
-            <Footer></Footer>
+           
         <div className="contact-container">
             <div className="container">
                 <div className="row">
@@ -30,7 +30,7 @@ const Contact = () => {
             </div>
             
         </div>
-       
+        <Footer></Footer>
         </div>
     );
 };
